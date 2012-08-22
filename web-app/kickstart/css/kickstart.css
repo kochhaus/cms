@@ -4,7 +4,6 @@
 
 .navbar img.logo		{ max-height: 25px; position: relative; top: 4px; }
 .navbar a.logo			{ padding: 7px 0 0; margin: 0px; border: 0px; }
-.navbar .brand			{ padding: 2px 20px 10px 20px; }
 .navbar .brand small	{ font-size: 14px; color: #999; }
 
 /** 

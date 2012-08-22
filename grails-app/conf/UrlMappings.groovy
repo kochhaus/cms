@@ -3,19 +3,17 @@ class UrlMappings {
 	static mappings = {
 		
 		"/"	{
-			controller	= 'home'
-			action		= { 'index' }
-            view		= { 'index' }
+			controller = 'login'
+			action =  'auth'
         }
-		"/$controller/$action?/$id?"{
+
+        "/$controller/$action?/$id?"{
 			constraints {
 				controller(matches:/^((?!(api|mobile|web)).*)$/)
 		  	}
 		}
-		
-		/* 
-		 * System Pages without controller 
-		 */
-		"500"	(view:'/error')
+
+        "500"	(view:'/error')
+        "404"	(view:'/error')
 	}
 }

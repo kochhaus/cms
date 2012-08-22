@@ -56,8 +56,7 @@
                 </ul>
 
                 <div class="pull-right">
-                    <g:render template="/menu/language"/>
-                    <g:render template="/menu/info"/>
+
                 </div>
             </div>
 
