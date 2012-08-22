@@ -1,8 +1,8 @@
 dataSource {
     pooled = true
     driverClassName = "org.h2.Driver"
-    username = "sa"
-    password = ""
+    username = cms.db.username
+    password = cms.db.username
 }
 hibernate {
     cache.use_second_level_cache = true
