@@ -16,7 +16,7 @@ class BootStrap {
             }
 
             if (!User.findByEmail('test@example.com')){
-                userService.createUser('test@example.com', 'test', Authority.ADMIN)
+                userService.createUser('test@example.com', 'test', Authority.ADMIN, true)
             }
         }
     }

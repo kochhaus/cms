@@ -1,11 +1,6 @@
 class UrlMappings {
 
 	static mappings = {
-		
-		"/"	{
-			controller = 'login'
-			action =  'auth'
-        }
 
         "/$controller/$action?/$id?"{
 			constraints {
@@ -13,7 +8,12 @@ class UrlMappings {
 		  	}
 		}
 
+        "/" (
+            controller: 'dashBoard'
+        )
+
         "500"	(view:'/error')
-        "404"	(view:'/error')
+        "404"	(view:'/errors/404')
+        "403"	(view:'/error')
 	}
 }

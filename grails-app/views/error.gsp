@@ -5,7 +5,7 @@
 	</head>
 
   <body>
-  
+
 	<section id="overview" class="">
     	<div class="alert alert-error">
 			${request.'javax.servlet.error.message'.indexOf(':') == null ? request.'javax.servlet.error.message'.encodeAsHTML()	: request.'javax.servlet.error.message'.substring(0, request.'javax.servlet.error.message'.indexOf(':')).encodeAsHTML()}
@@ -15,7 +15,7 @@
 			</g:if>
  	   </div>
 	</section>
-		
+
 	<section id="details" class="">
 	    <h2>Error Details</h2>
 	  	<div class="message">
