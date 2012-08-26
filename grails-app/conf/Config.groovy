@@ -81,5 +81,6 @@ log4j = {
 
 // Added by the Spring Security Core plugin:
 grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.foodible.user.User'
+grails.plugins.springsecurity.userLookup.usernamePropertyName = 'email'
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.foodible.user.UserRole'
 grails.plugins.springsecurity.authority.className = 'com.foodible.user.Role'
