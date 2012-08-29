@@ -7,7 +7,7 @@
         <meta name="author" content="">
         <title><g:layoutTitle default="${meta(name: 'app.name')}"/></title>
         <g:layoutHead/>
-        <r:require modules="bootstrap"/>
+        <r:require modules="bootstrap, application"/>
         <r:layoutResources/>
     </head>
     <body>
@@ -16,7 +16,7 @@
                 <div class="container">
                     <a class="brand" href="${createLink(uri: '/')}">${meta(name: 'app.name')}&nbsp;<small>v${meta(name: 'app.version')}</small></a>
                     <ul class="nav">
-                        <li><a href="${createLink(controller: 'user')}" class="${controllerName == 'user' ? 'active' : ''}">Users</a></li>
+                        <li  class="${controllerName == 'user' ? 'active' : ''}"><a href="${createLink(controller: 'user')}">Users</a></li>
                     </ul>
                     <ul class="pull-right nav">
                         <li class="pull-right"><a href="${createLink(controller: 'logout')}">Logout</a></li>
@@ -26,9 +26,7 @@
         </div>
 
         <div class="container">
-            <section>
-                <g:layoutBody/>
-            </section>
+            <g:layoutBody/>
         </div>
 
         <!--[if lt IE 9]>

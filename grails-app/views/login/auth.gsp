@@ -11,7 +11,7 @@
                         <div class="alert alert-error">${flash.message}</div>
                     </g:if>
                     <form action="${postUrl}" method="POST" id="loginForm">
-                        <label for="username"><g:message code="springSecurity.login.email.label"/>:</label>
+                        <label for="username"><g:message code="cms.userEmail"/>:</label>
                         <input type="text" class="span4" name="j_username" id="username" />
 
                         <label for="password"><g:message code="springSecurity.login.password.label"/>:</label>
