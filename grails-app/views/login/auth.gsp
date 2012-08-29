@@ -1,5 +1,4 @@
 <html>
-<head>
     <head>
         <title><g:message code="springSecurity.login.title"/></title>
     	<meta name="layout" content="notauthorized"/>

@@ -9,11 +9,13 @@ class UrlMappings {
 		}
 
         "/" (
-            controller: 'dashBoard'
+            controller: 'dashboard'
         )
 
-        "500"	(view:'/error')
+        "/denied"	(view:'/errors/404')
+
+        "500"	(view:'/errors/500')
         "404"	(view:'/errors/404')
-        "403"	(view:'/error')
+        "403"	(view:'/errors/403')
 	}
 }

@@ -15,8 +15,16 @@ class BootStrap {
                 }
             }
 
-            if (!User.findByEmail('test@example.com')){
-                userService.createUser('test@example.com', 'test', Authority.ADMIN, true)
+            if (!User.findByEmail('admin@example.com')){
+                userService.createUser('admin@example.com', 'admin', Authority.ADMIN, true)
+            }
+
+            if (!User.findByEmail('cook@example.com')){
+                userService.createUser('cook@example.com', 'cook', Authority.COOK, true)
+            }
+
+            if (!User.findByEmail('user@example.com')){
+                userService.createUser('user@example.com', 'user', Authority.USER, true)
             }
         }
     }

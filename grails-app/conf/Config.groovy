@@ -88,7 +88,7 @@ grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.foodible.
 grails.plugins.springsecurity.authority.className = 'com.foodible.user.Role'
 grails.plugins.springsecurity.failureHandler.defaultFailureUrl = '/login/authfail?login_error=1'
 grails.plugins.springsecurity.apf.filterProcessesUrl = '/loginValidation'
-grails.plugins.springsecurity.successHandler.defaultTargetUrl = '/dashBoard'
+grails.plugins.springsecurity.successHandler.defaultTargetUrl = '/dashboard'
 grails.plugins.springsecurity.securityConfigType = 'InterceptUrlMap'
 grails.plugins.springsecurity.interceptUrlMap = [
    '/login/**': ['IS_AUTHENTICATED_ANONYMOUSLY'],
